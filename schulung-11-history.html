@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+  <title>JavaScript Basics 1-1</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" /> -->
+  <link href="jsBasics.css" rel="stylesheet" />
+
+</head>
+<body>
+  <div id="impress">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div class="step"  id="title" data-x="0">
+      <img src="js.jpg" alt="" class="fill">
+      <h3>JavaScript History</h3>
+
+      <div class="mod-note">
+      </div>
+    </div>
+
+    <div class="step"  id="dark-ages" data-y="2000">
+      <h3>LiveScript to ECMAScriptv3 / 1995 - 1999</h3>
+      <ul>
+        <li>Brendan Eich, Netscape & Sun</li>
+        <li>Netscape Navigator 2</li>
+        <li>Self - Scheme - Java</li>
+        <li>Internet Explorer 3.0 - JScript</li>
+        <li>ECMAScript 262</li>
+      </ul>
+      <div class="mod-note">
+        - Im September 1995 veröffentlicht Netscape Navigator 2.0 mit LiveScript. Brendan Eich musste die Sprache in 10 Tagen entwickeln, sonst "wäre etwas schlimmes passiert". Durch Zusammenarbeit mit Sun
+          und der damals hohe popularität von Java wird LiveScript zu JavaScript umbenannt. Lizenzrechte an dem Namen liegen derzeit bei Oracle, jedoch ist der Name so geläufig, dass es synonym mit ECMAScript verwendet wird.
+        - Laut Eich sind die Sprachen Self und Scheme Vorbilder gewesen. Java syntax wurde übernommen und angepasst.
+        - JavaScript wurde designed um eine sehr niedrige Eintrittsbarierre zu haben und gleichzeitig mächtig zu sein.
+        - Durch die kurze Entwicklungszeit, schlichen sich einige "Bad Parts" ein, doch die positiven Seiten überwiegen deutlich
+        - 1996 IE 3.0 mit JScript erscheint
+        - 1997/98 ECMA standard 262 - ECMAScript v1/v2
+        - "Browser Wars" vornehmlich in DOM/HTML und CSS features. Nicht Teil der Sprache!
+      </div>
+    </div>
+
+    <div class="step"  id="mid-ages" data-y="2000" data-x="2000">
+      <h3>ECMAScript v3 / 2000 - 2009</h3>
+      <ul>
+        <li>IE 6 bis FF 1</li>
+        <li>Version 4: Eine Totgeburt</li>
+        <li>Mozilla kommt zurück</li>
+        <li>AJAX - Eine Wiedergeburt</li>
+        <li>v8/Chrome ändert alles</li>
+        <li>Prototype.js, jQuery, Dojo, Mootools</li>
+        <li>ECMAScript 5</li>
+      </ul>
+      <div class="mod-note">
+        - Microsoft gewann die BrowserWars mit dem IE6 und beherrschte den Browsermarkt in den frühen 2000ern
+        - Zu dieser Zeit wurde versucht die Sprache weiter zu entwickeln, dies Scheiterte jedoch an hohen ansprüchen und manglender Unterstützung seitens Vendor
+        - ECMA 4 kam nie raus und wurde 2003 eingestellt.
+        - 2005 passierten mehrere Dinge, die eine renaissance auslösten:
+        - Nachdem Netscape von der Bildfläche verschwand, wurde das ECMA Gremium von Microsoft dominiert. Firefox kam raus und gewann an bedeutung
+          so dass Mozilla (mit Brendan Eich) nun Platz in dem ECMA Gremium nahm
+        - Die AJAX technologie kam raus und ermöglichte eine neue Art webentwicklung, wodurch JavaScript an Bedeutung gewann.
+        - Google Chrom erschien 2006 und rief einen neuen Wettlauf aus: Performance.
+        - Prototypejs, Dojo, Mootools und vor allem jQuery schaffen es die DOM inkompatibilitäten zu kapseln und Entwicklung zu verbessern
+        - Nach und nach verdrängte JavaScript wieder Flash. HTML5 und iPhone beschleunigten dies.
+        - 2009 erscheint ECMA 5: strict mode, erweiterte Object und Array methoden, JSON
+        - Fast noch wichtiger: Konsens darüber, dass ECMA 6 kommt und besseres Schicksal haben wird als ECMA 4
+      </div>
+    </div>
+
+    <div class="step"  id="now-future" data-x="2000" data-y="0">
+      <h3>Rise of JavaScript / 2009 - heute</h3>
+      <ul>
+        <li>ECMA TC39 / ECMA Next / ECMA Harmony</li>
+        <li>Backbone et al</li>
+        <li>HTML 5 / CSS 3</li>
+        <li>Node.js</li>
+        <li>JavaScript eats the world</li>
+      </ul>
+      <div class="mod-note">
+        - Mobile Devices killten Flash etc.
+        - TC 39 entwickelt ECMAScript weiter, 2014/2015 fertig, viele teile bereits implementiert. Diverse zusammenstellung.
+        - Mit stark verbesserter Perfomance, verbesserten APIs ist der Browser zu einer Rich Cient PLattform geworden
+        - Backbonejs, Angular, Knockout etc. MVC Frameworks für den Client, Ajax und WebScockets.
+        - HTML 5 und CSS 3 erlauben neue Möglichkeiten die Flash überflüssig machen.
+        - Node.js brachte JavaScript auf den Server und schlug ein.
+        - JavaScript ist überall: TV, Win8, JVM (Nashorn), Arduino, RaspberryPI, Photoshop, Datenbanken etc.etc.etc
+      </div>
+    </div>
+
+  </div>
+<!--script src="https://raw.githubusercontent.com/bartaz/impress.js/master/js/impress.js"></script-->
+<script src="impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>

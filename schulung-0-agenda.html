@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+  <title>JavaScript Basics - Agenda</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" /> -->
+  <link href="jsBasics.css" rel="stylesheet" />
+
+
+</head>
+<body>
+  <div id="impress">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div class="step center"  id="title" data-x="0">
+      <img src="js.jpg" alt="" class="fill"/>
+      <h3>JavaScript Basics - Agenda</h3>
+
+      <div class="mod-note">
+        Hallo und Willkommen!
+      </div>
+    </div>
+
+    <div class="step center"  id="me" data-y="2000">
+      <img src="gregor_elke.JPG" alt="" class="fill"/>
+      <h3>Gregor @greelgorke Elke</h3>
+      <img src="cc_dunkelblau.png" alt="" class="fill"/>
+    </div>
+
+    <div class="step"  id="tage" data-y="4000">
+      <h3>JavaScript Basics - Agenda</h3>
+      <ol>
+        <li>Tag - JavaScript</li>
+        <li>Tag - JavaScript & Browser</li>
+        <li>Tag - JS Projekte & Tools</li>
+      </ol>
+      <div class="mod-note">
+        - 3 Tage, viel zu lernen
+        - 3X je 2 Stunden
+        - Können nur die Oberfläche ankratzen
+        - Wo kratzen wir?
+        - im Detail:
+      </div>
+    </div>
+
+    <div class="step"  id="tag1" data-x="2000" data-y="4000">
+      <h3>1. Tag - Die Sprache</h3>
+      <ol>
+        <li>Vorgeschichte</li>
+        <li>Basics - Syntax, Werte, Funktionen</li>
+        <li>Datenstrukturen - Array & Object</li>
+        <li>JSHint - Good vs. Bad Parts</li>
+      </ol>
+      <div class="mod-note">
+        - Es ist wichtig ein wenig Geschichte zu kennen um zu verstehen warum dinge sind wie sie sind.
+        - Dann schauen wir und die Sprache an. JavaScript hat kaum was mit Java zu tun. Daher lohnt es sich die Syntax
+          sich genauer anzusehen und grade dort die unterschiede zu sehen, wo die syntax ähnlich ist.
+        - JS bringt nur wenige Strukturen mit: Hashes (objects) und Arrays (special objects), flexibilität, dynamische typisierung
+          und funktionale Konzepte machen es mehr als wett.
+        - Zum schluss widmen wir uns einem wichtigem Thema: Code Qualität und Safe subset. Es gibt dieses Bild im internet
+      </div>
+    </div>
+
+    <div class="step center"  id="tag11" data-x="4000" data-y="4000">
+      <h3>Good Parts - Bad Reputation</h3>
+      <img src="good_parts.jpeg" alt="" />
+      <div class="mod-note">
+        - Es wurde gemacht um sich über die sprache lustig zu machen.
+        - Drei Dinge werden hier aber verkannt:
+        - 1. dieses Buch hat eine hohe informationsdichte und ist sehr kompakt geschrieben. ich musste es mind. 3 mal lesen um alles zu durchdringen.
+        - 2. die definitive referenz deckt auch DOM&co ab.
+        - 3. Nur soviel der sprache ist notwendig um elegante, und was noch wichtiger qualitativ gute software zu schreiben
+      </div>
+    </div>
+
+    <div class="step"  id="tag12" data-x="4000" data-y="2000">
+      <h3>1. Tag - Die Sprache</h3>
+      <ol>
+        <li>Vorgeschichte</li>
+        <li>Basics - Syntax, Werte, Funktionen</li>
+        <li>Datenstrukturen - Array & Object</li>
+        <li>JSHint - Good vs. Bad Parts</li>
+      </ol>
+      <div class="mod-note">
+        - Es gibt tools, die uns helfen ein sicheres subset einzuhalten: linter. JSLint ist das original von Crockford. Doch
+          JSHint ist vermutlich das ppulärste, weil es vielfältige konfigurationen erlaubt, während JSLint weniger flexibel,
+          manche sagen zu diktatorisch, ist.
+        - Generell gibt es zwei Denkweisen hier. Die eine sagt, die meisten Entwickler müssen erzogen und ageleitet werden.
+          Weil sie sich und ander aufgrund verschiedener Umstände, wie skilllevel, projektbedingter Zeitmangel,
+          hang zu "coolem" coding, oder schlichtweg faulheit ins verderben stürzen.
+        - Die andere Denkweise sagt: Es gibt Eigenschaften in der Sprache, die sind gut, wenn man verstanden hat, wie sie funktioniern.
+          Damit die Entwickler damit keinen unfug machen, müssen sie dies lernen, anstatt dass es ihnen verboten wird
+        - Ich bin vertretter der zweiten Denkweise, aber ich bin es mir auch bewusst, dass in größeren Projekten und Teams, vor allem
+          mit relativ unerfahrenen Entwicklern, ein strickte Konfiguration sinnvoller ist.
+        - Trotzdem will ich dass ihr am ende eine Entscheidung über eine Linter konfiguration treffen könnt, statt sich blind auf
+          Gurus verlassen zu müssen.
+        - Ausserdem lernt man so auch wichtige Details der Sprache
+      </div>
+    </div>
+
+    <div class="step"  id="tag2" data-x="2000" data-y="2000">
+      <h3>2. Tag - JavaScript im Browser</h3>
+      <ol>
+        <li>HTML - Struktur, DOM und HTML5</li>
+        <li>CSS - Style, Selektoren und Frameworks</li>
+        <li>we code an app now!</li>
+      </ol>
+      <div class="mod-note">
+        - JavaScript ist dazu designed worden innerhalb einer Umgebung zu laufen. Die Umgebung bestimmt was JS Programme können,
+          und wie sie mit der Welt interagieren. Browser ist die ursprüngliche und verbreitetste Umgebung.
+        - DOM API ist der Zugang zur sichtbaren Welt, Projektion des Dokumentes in die JS Umgebung. Änderungen an Struktur,
+          Aussehen und Reaktion auf Nutzerverhalten passieren hierüber
+        - Ein paar worte zu HTML
+        - Ein wenig zu HTML5 und warum Flash langsam ausstirbt.
+        - Etwas CSS, speziell wie der Browser CSS regeln anwedet und wie wir es uns leichter machen können.
+        - Am Ende wenden wir das Gelernte an und basteln eine Webapp from scratch. TODO-MVC ist ein Klassiker der Client-Side Appentwicklung.
+      </div>
+    </div>
+
+    <div class="step"  id="tag3" data-x="2000" data-y="0">
+      <h3>3. Tag - JavaScript Projekte & Tools</h3>
+      <ol>
+        <li>Struktur & Komposition</li>
+        <li>Tools, Tools, Tools</li>
+        <li>Testing!</li>
+      </ol>
+      <div class="mod-note">
+        - Wir machen Applikationen? Wir müssen darüber reden, wie wir modularisieren, wie code und assets organisiert werden
+          können, wie wir wiederverwendbarkeit testbarkeit erreichen. Und was uns hierbei helfen kann, höhere Abstraktionen
+          zu bilden.
+        - Buildtools, Scaffolding, Dependecies, Transpilers, Optimizer, Documentation, Debugging. JS Ökosystem ist reich-
+          haltig, doch nicht unbedingt übersichtlich. Wir schauen auf gängigste tools und es gibt einen Rat.
+        - Testing ist wichtig, ohne Compiler umso mehr. Auch hier gibt es unterschiedliche methoden und Tools. Ich stelle ein paar vor.
+      </div>
+    </div>
+
+    <div class="step"  id="vorgehen" data-x="2000" data-y="-2000">
+      <h3>Übung macht den Meister</h3>
+      <ul>
+        <li>Explorativ und interaktiv</li>
+        <li>coden,coden,coden</li>
+        <li>Open Source Materialen</li>
+        <li>OpenTechSchool</li>
+      </ul>
+      <div class="mod-note">
+        - Wir machen Applikationen? Wir müssen darüber reden, wie wir modularisieren, wie code und assets organisiert werden
+          können, wie wir wiederverwendbarkeit testbarkeit erreichen. Und was uns hierbei helfen kann, höhere Abstraktionen
+          zu bilden.
+        - Buildtools, Scaffolding, Dependecies, Transpilers, Optimizer, Documentation, Debugging. JS Ökosystem ist reich-
+          haltig, doch nicht unbedingt übersichtlich. Wir schauen auf gängigste tools und es gibt einen Rat.
+        - Testing ist wichtig, ohne Compiler umso mehr. Auch hier gibt es unterschiedliche methoden und Tools. Ich stelle ein paar vor.
+      </div>
+    </div>
+
+
+    <div class="step"  id="literatur" data-x="0" data-y="-2000">
+      <h3>Lesestoff für Details</h3>
+      <ul>
+        <li>eloquentjavascript.net</li>
+        <li>Mozilla Developer Network</li>
+        <li>JavaScript Patterns</li>
+        <li>Maintainable JavaScript</li>
+        <li>JavaScript - The Good Parts</li>
+      </ul>
+      <div class="mod-note">
+        - Wir machen Applikationen? Wir müssen darüber reden, wie wir modularisieren, wie code und assets organisiert werden
+          können, wie wir wiederverwendbarkeit testbarkeit erreichen. Und was uns hierbei helfen kann, höhere Abstraktionen
+          zu bilden.
+        - Buildtools, Scaffolding, Dependecies, Transpilers, Optimizer, Documentation, Debugging. JS Ökosystem ist reich-
+          haltig, doch nicht unbedingt übersichtlich. Wir schauen auf gängigste tools und es gibt einen Rat.
+        - Testing ist wichtig, ohne Compiler umso mehr. Auch hier gibt es unterschiedliche methoden und Tools. Ich stelle ein paar vor.
+      </div>
+    </div>
+
+
+
+  </div>
+<script src="impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
