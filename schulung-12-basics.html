@@ -75,8 +75,8 @@ for (bottles = 99; bottles > 0; bottles--) {
         - keine Typenangabe
         - var kann überall vorkommen, wird gehoisted
         - kein blockscope, auch nicht in for loops
-        - schleifen und kontrollstrukturen wie in Java
-        - switch-case ist mächtig, kann auf allen werten arbeiten, allerdings kein pattern matching sondern ein === vergleich
+        - Schleifen und Kontrollstrukturen wie in Java
+        - switch-case ist mächtig, kann auf allen Werten arbeiten, allerdings kein pattern matching sondern ein === vergleich
       </div>
     </div>
 
@@ -84,7 +84,8 @@ for (bottles = 99; bottles > 0; bottles--) {
       <h3>Literale</h3>
       <pre><code>
 var str = 'ein string', zahl = 42,
-    bool = true, nullRef = null, undef;
+    bool = true, nullRef = null, undef
+    regex = /foo/gim;
 var arr = [1,'2',3], objekt = {eigenschaft: 'wert'};
 var funcExp = function(){};
 
@@ -145,15 +146,15 @@ typeof new String('string');
 '' == false;
 false == null;
 undefined != null
-=== != ==
+// === != ==
       </code></pre>
       <div class="mod-note">
         - vergleiche in JS könne tricky sein, weil ==/!= eine ganze menge unternimmt um dem entwickler zu "helfen"
         - die regeln sind lang, teilweise kompliziert und nur wenige kennen sie wirklich.
-        - ein solcher vergleich scheint praktisch wenn alle inputs sind strings. Doch sie sind quelle mancher fehler. und selten sinnvoll
+        - ein solcher vergleich scheint praktisch wenn alle inputs strings sind. Doch sie sind Quelle mancher Fehler, und selten sinnvoll
         - ===/!== funktionert wie in == in Java: Identitätscheck.
-        - in der regel das, was wir haben wollen und erwarten
-        - funktioniert auch mit primitiven typen, nicht mit objektversionen, hier ist kann ein expliziter cast sinnvoll sein.
+        - in der Regel das, was wir haben wollen und erwarten
+        - funktioniert auch mit primitiven typen, nicht mit Wrappern, hier ist kann ein expliziter cast sinnvoll sein.
         - Was ist der unterschied zwischen null und undefined?
         - null ist eine explizit zugewiesen referenz auf nichts.
         - undefined hat die Semantik von noch kein wert zugewiesen
@@ -167,7 +168,7 @@ undefined != null
       <h3>Die Wahrheit ist fuzzy</h3>
       <pre><code>
 var values = [true, 1, 42, -4, "nichtleer", '0', {}, [],
-              false, 0, NaN, null, undefined, ""]
+              false, 0, NaN, null, undefined, ""];
 var logStr = "At index %d, value %s is %s";
 
 for ( var i = 0; i< values.length; i++) {
@@ -184,7 +185,7 @@ ifDef && ifDef.exec && ifDef.exec() // !!
       </code></pre>
       <div class="mod-note">
         - JavaScript interpretiert in manchen fällen alle Werte als bool-ish.
-        - in einem if (wert) check und im dem ternären operator
+        - in einem if/for/while (wert) check und im dem ternären operator
         - in boolischen operationen
         - letzteres wird oft genutzt um kurze schreibweisen für bestimme fälle zu haben
         - || evaluiert erst den linken operanden.
@@ -193,7 +194,7 @@ ifDef && ifDef.exec && ifDef.exec() // !!
         - && evaluiert erst den linken operanden
           wenn das ergebnis truthy ist, wird der rechte operand evaliert und dessen ergebnis zurückgegeben (true && console.log('eval'))
           sonst wird das ergebnis des linken operanden zurückgegeben und der rechte operand nicht evaluiert
-        - Achtung: beim && check wird nur truthyness  und somit existenz geprüft. ob exec eine Funktion ist, wird hierdurch nicht geprüft
+        - Achtung: beim && check wird nur truthyness und somit existenz geprüft. ob exec eine Funktion ist, wird hierdurch nicht geprüft
         - Ja, Funktionen sind Objekte und somit truthy
       </div>
     </div>
@@ -213,10 +214,10 @@ NaN == NaN // !!
         - Operationen im Integerbereich sind genau
         - 2 wege Werte nach Number zu konvertieren: Number() und parseInt/parseFloat
         - Number wendet Regeln der Typkonversion an. Wichtig zu wissen:
-          strings die number-literale beinhalten werden konvertieret, sonst NaN
-          falsy werte werden zu 0, nur true wird 1
+          strings, die number-literale beinhalten, werden konvertieret, sonst NaN
+          falsy werte werden zu 0, aber nur true wird 1
           Number Objekte zu primitiven, rest: spec lesen, in der regel NaN
-        - parseInt/parseFloat parsen die string. Der Parsealgorythmus interpretiert string anders
+        - parseInt/parseFloat parsen die strings. Der Parse-algorythmus interpretiert string anders
         - parseInt kommt mit der scientic notation nicht richtig zurecht, parseFloat schon
         - parseInt schlägt fehl wenn die zahl zu gross wird, parseFloat kommt damit klar:
           parseInt(100000000000000000000000000000000000000000000, 10) -> 1
@@ -249,7 +250,7 @@ var TheConstructor = function AlsoAsFunctionName(){};
       was vergessen?
       alles unklar?
       <div class="mod-note">
-        pinkelpause
+        pause
       </div>
     </div>
     <div class="step"  id="12" data-y="0" data-x="8000">

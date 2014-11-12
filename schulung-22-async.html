@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+  <title>JavaScript Basics - Async</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" /> -->
+  <link href="jsBasics.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="highlight/styles/idea.css">
+<script src="highlight/highlight.pack.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+</head>
+<body>
+  <div id="impress">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div class="step center"  id="title" data-x="0">
+      <img src="js.jpg" alt="" class="fill"/>
+      <h3>JavaScript Basics - Async</h3>
+
+      <div class="mod-note">
+
+      </div>
+    </div>
+
+    <div class="step "  id="1" data-y="2000">
+      <h3>Themen heute nachmittag</h3>
+      <ul>
+        <li>Callbacks</li>
+        <li>Events</li>
+        <li>Module</li>
+        <li>Promises</li>
+      </ul>
+    </div>
+<div class="step"  id="2" data-y="4000" data-x="0">
+  <h3>asynchrone Programmierung</h3>
+  <ul>
+    <li>nicht blockieren</li>
+    <li>call me later</li>
+    <li>Zukunft ist Vergangenheit</li>
+  </ul>
+  <div class="mod-note">
+
+  </div>
+</div>
+<div class="step"  id="3" data-y="6000" data-x="0">
+  <h3>async Beispiel</h3>
+  <pre><code>
+setTimout(function(){
+  console.log('ich bin im Timeout')
+}, 0)
+
+console.log('ich bin nach Timeout')
+  </code></pre>
+  <div class="mod-note">
+
+  </div>
+</div>
+<div class="step"  id="4" data-y="8000" data-x="0">
+  <h3>Callbacks</h3>
+  <ul>
+    <li>Continuation Passing</li>
+    <li>Funktionsobjekte</li>
+    <li>Achtung! this!</li>
+  </ul>
+  <div class="mod-note">
+
+  </div>
+</div>
+<div class="step"  id="5" data-y="8000" data-x="2000">
+  <h3>Callback Hell</h3>
+  <ul>
+    <li>stark geschachtelt</li>
+    <li>Kontrollstrukturen</li>
+    <li>Closures - Achtung! Scope!</li>
+    <li>Hauptursache: starke Kopplung</li>
+  </ul>
+  <div class="mod-note">
+
+  </div>
+</div>
+<div class="step"  id="6" data-y="6000" data-x="2000">
+  <h3>beat callback hell</h3>
+  <ul>
+    <li>verflachung</li>
+    <li>modularisierung</li>
+    <li>vermeide closures</li>
+    <li>SOLID & co</li>
+  </ul>
+  <div class="mod-note">
+
+  </div>
+</div>
+<div class="step"  id="7" data-y="4000" data-x="2000">
+  <h3>Events</h3>
+  <ul>
+    <li>Observer Pattern</li>
+    <li>DOM Event API</li>
+    <li>EventListener und Event</li>
+    <li>Interaktion und Dynamik</li>
+  </ul>
+  <div class="mod-note">
+
+  </div>
+</div>
+<div class="step"  id="8" data-y="2000" data-x="2000">
+  <h3>Event methoden</h3>
+  <ul>
+    <li>.addEventListener()</li>
+    <li>EventListener ist eine function</li>
+    <li>Event#target, Event#preventDefault()</li>
+    <li>Event propagation</li>
+  </ul>
+  <div class="mod-note">
+
+  </div>
+</div>
+<div class="step"  id="9" data-y="0" data-x="2000">
+  <h3>Module</h3>
+  <ul>
+    <li>Modularisierung erzwingt entkopplung</li>
+    <li>explizite Parameter</li>
+    <li>SRP und SoC</li>
+    <li>Interface: Events || Callbacks</li>
+  </ul>
+  <div class="mod-note">
+
+  </div>
+</div>
+<div class="step"  id="10" data-y="0" data-x="4000">
+  <h3>Promises 1</h3>
+  <ul>
+    <li>Futures in Java</li>
+    <li>ein Wert, der irgendwann vorliegt</li>
+    <li>Alternative zu Callbacks und Events</li>
+    <li>Transformation und Fehlerbehandlung</li>
+  </ul>
+  <div class="mod-note">
+
+  </div>
+</div>
+<div class="step"  id="11" data-y="2000" data-x="4000">
+  <h3>Promises 2</h3>
+  <ul>
+    <li></li>
+    <li>ein Wert, der irgendwann vorliegt</li>
+    <li>Alternative zu Callbacks und Events</li>
+    <li>Transformation und Fehlerbehandlung</li>
+  </ul>
+  <div class="mod-note">
+
+  </div>
+</div>
+<div class="step"  id="12" data-y="4000" data-x="4000">
+  <h3>Promises A++</h3>
+  <ul>
+    <li>.then()/.catch()/.finaly()</li>
+    <li>.resolve()/.reject()</li>
+    <li>chaining</li>
+    <li>orchestration</li>
+  </ul>
+  <div class="mod-note">
+
+  </div>
+</div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+
+
+  </div>
+<script src="impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
