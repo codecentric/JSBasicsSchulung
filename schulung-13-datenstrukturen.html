@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>JavaScript Basics 1-1</title>
+  <title>JavaScript Basics - 1.1 Datastructures</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" /> -->
   <link href="jsBasics.css" rel="stylesheet" />
@@ -23,7 +23,7 @@
 
     <div class="step"  id="title" data-x="0">
       <img src="js.jpg" alt="" class="fill">
-      <h3>JavaScript Datenstrukturen</h3>
+      <h3>JavaScript Data Structures</h3>
 
       <div class="mod-note">
       </div>
@@ -33,40 +33,40 @@
       <h3>Objects</h3>
       <ul>
         <li>key-value container, maps</li>
-        <li>key sind strings</li>
-        <li>value kann alles sein</li>
-        <li>Objektmethoden sind functions als values</li>
+        <li>keys are strings</li>
+        <li>values can be anything</li>
+        <li>Objectmethods are function values</li>
       </ul>
       <div class="mod-note">
       </div>
     </div>
 <div class="step"  id="2" data-y="4000" data-x="0">
-  <h3>Objekte erstellen</h3>
+  <h3>Object creation</h3>
   <ul>
-    <li>per Literal</li>
-    <li>per Konstruktor</li>
-    <li>per factory function</li>
+    <li>via literal</li>
+    <li>via constructor</li>
+    <li>via factory function</li>
     <li>foo instanceof Person</li>
-    <li>Eigenschaften sind public</li>
+    <li>Properties are public</li>
   </ul>
   <div class="mod-note">
 
   </div>
 </div>
 <div class="step"  id="3" data-y="6000" data-x="0">
-  <h3>Prototypen</h3>
+  <h3>Prototypes</h3>
   <ul>
-    <li>jedes Objekt beginnt mit einem Prototypen</li>
-    <li>Prototyp ist einfach nur ein Objekt</li>
-    <li>Alle Objektinstanzen eines Konstruktors teilen den prototypen</li>
-    <li>Eigenschaften auf der instanz vs auf dem prototype</li>
+    <li>every object has a prototype</li>
+    <li>Prototype is just an object</li>
+    <li>All instances share the prototype of their constructor</li>
+    <li>Properties of an instance vs of the prototype</li>
   </ul>
   <div class="mod-note">
 
   </div>
 </div>
 <div class="step"  id="4" data-y="8000" data-x="0">
-  <h3>Iterieren über Objekteigenschaften</h3>
+  <h3>How to iterate over properties</h3>
   <ul>
     <li>for(key in obj)</li>
     <li>hasOwnProperty()</li>
@@ -79,7 +79,7 @@
   </div>
 </div>
 <div class="step"  id="5" data-y="8000" data-x="2000">
-  <h3>ES5 Object Methods</h3>
+  <h3>ES5 Object Creation</h3>
   <ul>
     <li>Object.create()</li>
     <li>Object.defineProperty()</li>
@@ -93,9 +93,9 @@
 <div class="step"  id="6" data-y="6000" data-x="2000">
   <h3>Array</h3>
   <ul>
-    <li>Arrays sind Objekte mit numerischen Schlüsseln und length Property</li>
-    <li>nicht performanter als nicht-arrays</li>
-    <li>Array prototype bringt hilfreiche methoden</li>
+    <li>Arrays are Objekts with numeric keys and a length property</li>
+    <li>their performance is not better</li>
+    <li>Array prototype has helpful methods</li>
     <li>Array-like Objects</li>
   </ul>
   <div class="mod-note">
@@ -103,19 +103,19 @@
   </div>
 </div>
 <div class="step"  id="7" data-y="4000" data-x="2000">
-  <h3>Arrays erstellen</h3>
+  <h3>Arrays creation</h3>
   <ul>
     <li>literal</li>
     <li>new Array</li>
-    <li>als permutation</li>
-    <li>als arrayisierung</li>
+    <li>as permutation</li>
+    <li>as array-isation</li>
   </ul>
   <div class="mod-note">
 
   </div>
 </div>
 <div class="step"  id="8" data-y="2000" data-x="2000">
-  <h3>Über Arrays iterieren</h3>
+  <h3>How to iterate over Arrays</h3>
   <ul>
     <li>for-i loop</li>
     <li>Array#forEach</li>
@@ -127,11 +127,11 @@
   </div>
 </div>
 <div class="step"  id="9" data-y="0" data-x="2000">
-  <h3>Homogene arrays</h3>
+  <h3>homogeneous arrays</h3>
   <ul>
-    <li>Arrays sind Objekte</li>
-    <li>Werte können alles sein, gemischte typen.</li>
-    <li>Optimizer spekullieren auf homogene Arrays</li>
+    <li>Arrays are Objects</li>
+    <li>Values could be of different types</li>
+    <li>Optimizing compilers assume homogeneous Arrays</li>
   </ul>
   <div class="mod-note">
 
@@ -140,9 +140,9 @@
 <div class="step"  id="10" data-y="0" data-x="4000">
   <h3>Module Pattern</h3>
   <ul>
-    <li>JavaScript kennt keine Module (bisher)</li>
-    <li>Keine Privatheit</li>
-    <li>alle Eigenschaften können jederzeit von jedem geändert werden</li>
+    <li>JavaScript didn't know Modules (pre 2015)</li>
+    <li>no private props</li>
+    <li>all props can be changed by anyone</li>
   </ul>
   <div class="mod-note">
 
@@ -151,8 +151,8 @@
 <div class="step"  id="11" data-y="2000" data-x="4000">
   <h3>Module pattern to the rescue</h3>
   <ul>
-    <li>Kombination aus Function Scope</li>
-    <li>Factory und/oder Constructor Function</li>
+    <li>combination of function scope and</li>
+    <li>factory and/or constructor function</li>
   </ul>
   <div class="mod-note">
 
@@ -161,9 +161,9 @@
 <div class="step"  id="12" data-y="4000" data-x="4000">
   <h3>Back to functions</h3>
   <ul>
-    <li>Funktionen erzeugen scope</li>
-    <li>Funktionen können einander erstellen</li>
-    <li>Funktionen können einander zurückgeben</li>
+    <li>functions create scope</li>
+    <li>functions can create functions</li>
+    <li>functions can return functions</li>
   </ul>
   <div class="mod-note">
 
@@ -180,9 +180,9 @@
 <div class="step"  id="14" data-y="8000" data-x="4000">
   <h3>enter the module</h3>
   <ul>
-    <li>Eine umschliessende Funktion</li>
-    <li>private eigenschaften in diesem Scope</li>
-    <li>ein Object mit methoden ist public interface</li>
+    <li>An enclosing function</li>
+    <li>private properties in the local scope</li>
+    <li>an Object with methods is the public interface</li>
   </ul>
 
   <div class="mod-note">
@@ -232,9 +232,9 @@ function module(inject, params, here){
   </div>
 </div>
 <div class="step"  id="16" data-y="6000" data-x="6000">
-  <h3>Variationen</h3>
+  <h3>Variations</h3>
   <ul>
-    <li>Konstruktoren statt Factories</li>
+    <li>constructors instead of factories</li>
     <li>Object.defineProperty</li>
   </ul>
   <div class="mod-note">
@@ -242,7 +242,7 @@ function module(inject, params, here){
   </div>
 </div>
 <div class="step"  id="17" data-y="4000" data-x="6000">
-  <h3>Scopes</h3>
+  <h3>about scopes</h3>
   <ul>
     <li>global scope</li>
     <li>function scope</li>
@@ -256,10 +256,10 @@ function module(inject, params, here){
 <div class="step"  id="18" data-y="2000" data-x="6000">
   <h3>Closures 2</h3>
   <ul>
-    <li>access to variables, not value</li>
-    <li>Vorsicht in loops</li>
-    <li>closures sind schlüssel zum FP</li>
-    <li>closures können weh tun</li>
+    <li>access to variables, not values!</li>
+    <li>careful in loops</li>
+    <li>closures are the key to FP</li>
+    <li>closures can hurt</li>
   </ul>
   <div class="mod-note">
 
@@ -268,11 +268,11 @@ function module(inject, params, here){
 <div class="step"  id="19" data-y="0" data-x="6000">
   <h3>Closures Pain Points</h3>
   <ul>
-    <li>closures verleiten zum nesting</li>
-    <li>tiefe nestings können zu Memory leaking führen</li>
-    <li>tief genestete closures sind schwer zu refactorn</li>
-    <li>closures speichern Zustand</li>
-    <li>closures werden immer wieder angelegt.</li>
+    <li>closures tempt to nest function </li>
+    <li>deep nestings can lead to memory leaking</li>
+    <li>deeply nested closures are difficult to refactor</li>
+    <li>closures are stateful</li>
+    <li>closures are created often</li>
   </ul>
   <div class="mod-note">
 

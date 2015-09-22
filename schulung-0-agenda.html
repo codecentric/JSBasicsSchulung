@@ -23,7 +23,7 @@
       <h3>JavaScript Basics - Agenda</h3>
 
       <div class="mod-note">
-        Hallo und Willkommen!
+        Hi and welcome
       </div>
     </div>
 
@@ -33,94 +33,63 @@
       <img src="cc-white.jpg" alt="" class="fill"/>
     </div>
 
-    <div class="step"  id="tage" data-y="4000">
+    <div class="step"  id="days" data-y="4000">
       <h3>JavaScript Basics - Agenda</h3>
       <ol>
         <li>Pure JavaScript</li>
         <li>Browser, Dev + Tools</li>
       </ol>
       <div class="mod-note">
-        - 2 Tage, viel zu lernen
-        - 3X je 2 Stunden
-        - Können nur die Oberfläche ankratzen
-        - Wo kratzen wir?
-        - im Detail:
+        - 2 Days, much to learn
+        - 3X 2 hours each day
+        - we can only scratch the surface
+        - where do we scratch?
+        - in detail
       </div>
     </div>
 
-    <div class="step"  id="tag1" data-x="2000" data-y="4000">
-      <h3>1. Tag - Die Sprache</h3>
+    <div class="step"  id="day1" data-x="2000" data-y="4000">
+      <h3>1. Day - the language</h3>
       <ol>
-        <li>Vorgeschichte</li>
-        <li>Basics - <span>Syntax</span>, Werte, Funktionen</li>
-        <li>Datenstrukturen - Array & Object</li>
-        <li>JSHint - Good vs. Bad Parts</li>
+        <li>early days</li>
+        <li>Basics - <span>Syntax</span>, Types, Functions</li>
+        <li>Datastructures - Array & Object</li>
+        <li>Good vs. Bad Parts: Why JSHint</li>
       </ol>
       <div class="mod-note">
-        - Es ist wichtig ein wenig Geschichte zu kennen um zu verstehen warum dinge sind wie sie sind.
-        - Dann schauen wir und die Sprache an. JavaScript hat kaum was mit Java zu tun. Daher lohnt es sich die Syntax
-          sich genauer anzusehen und grade dort die unterschiede zu sehen, wo die syntax ähnlich ist.
-        - JS bringt nur wenige Strukturen mit: Hashes (objects) und Arrays (special objects), flexibilität, dynamische typisierung
-          und funktionale Konzepte machen es mehr als wett.
-        - Zum schluss widmen wir uns einem wichtigem Thema: Code Qualität und Safe subset. Es gibt dieses Bild im internet
+        - it is important to know why some things are that way in js, so we look a bit in its early days
+        - then we dive in to the language. we'll compare it a bit with java, since they share the syntax, and look at the differences
+        - JS brings just a few built in structures with it. Hashes and Arrays handling, flexible and dynamic typing and functional programming concepts
+          make this language a verypowerful one.
+        - at the end of the day we will look at some bad parts of the langauge and know how to avoid them.
       </div>
     </div>
 
-    <div class="step center"  id="tag11" data-x="4000" data-y="4000">
+    <div class="step center"  id="day11" data-x="4000" data-y="4000">
       <h3>Good Parts - Bad Reputation</h3>
       <img src="JavaScript-the-good-parts.jpg" alt="" />
       <div class="mod-note">
-        - Es wurde gemacht um sich über die sprache lustig zu machen.
-        - Drei Dinge werden hier aber verkannt:
-        - 1. dieses Buch hat eine hohe informationsdichte und ist sehr kompakt geschrieben. ich musste es mind. 3 mal lesen um alles zu durchdringen.
-        - 2. die definitive referenz deckt auch DOM&co ab.
-        - 3. Nur soviel der sprache ist notwendig um elegante, und was noch wichtiger qualitativ gute software zu schreiben
+        - u only need that much to create great things.
       </div>
     </div>
 
-    <div class="step"  id="tag12" data-x="4000" data-y="2000">
-      <h3>1. Tag - Die Sprache</h3>
-      <ol>
-        <li>Vorgeschichte</li>
-        <li>Basics - Syntax, Werte, Funktionen</li>
-        <li>Datenstrukturen - Array & Object</li>
-        <li>JSHint - Good vs. Bad Parts</li>
-      </ol>
-      <div class="mod-note">
-        - Es gibt tools, die uns helfen ein sicheres subset einzuhalten: linter. JSLint ist das original von Crockford. Doch
-          JSHint ist vermutlich das populärste, weil es vielfältige konfigurationen erlaubt, während JSLint weniger flexibel,
-          manche sagen zu diktatorisch, ist.
-        - Generell gibt es zwei Denkweisen hier. Die eine sagt, die meisten Entwickler müssen erzogen und ageleitet werden.
-          Weil sie sich und ander aufgrund verschiedener Umstände, wie skilllevel, projektbedingter Zeitmangel,
-          hang zu "coolem" coding, oder schlichtweg faulheit ins verderben stürzen.
-        - Die andere Denkweise sagt: Es gibt Eigenschaften in der Sprache, die sind gut, wenn man verstanden hat, wie sie funktioniern.
-          Damit die Entwickler damit keinen unfug machen, müssen sie dies lernen, anstatt dass es ihnen verboten wird
-        - Ich bin vertretter der zweiten Denkweise, aber ich bin es mir auch bewusst, dass in größeren Projekten und Teams, vor allem
-          mit relativ unerfahrenen Entwicklern, ein strickte Konfiguration sinnvoller ist.
-        - Trotzdem will ich dass ihr am ende eine Entscheidung über eine Linter konfiguration treffen könnt, statt sich blind auf
-          Gurus verlassen zu müssen.
-        - Ausserdem lernt man so auch wichtige Details der Sprache
-      </div>
-    </div>
-
-    <div class="step"  id="tag2" data-x="2000" data-y="2000">
-      <h3>2.1 Tag - JavaScript im Browser</h3>
+    <div class="step"  id="day2" data-x="2000" data-y="2000">
+      <h3>2.1 Day - JavaScript in the Browser</h3>
       <ol>
         <li>HTML - SoC</li>
-        <li>CSS - Selektoren</li>
+        <li>CSS - Selectors</li>
         <li>JS - Environment</li>
         <li>jQuery</li>
       </ol>
       <div class="mod-note">
-        - Ein kurzer Blick auf das zusammenspiel von HTML, CSS und JavascriptJavaScript ist dazu designed worden innerhalb einer Umgebung zu laufen. Die Umgebung bestimmt was JS Programme können,
-          und wie sie mit der Welt interagieren. Browser ist die ursprüngliche und verbreitetste Umgebung.
-        - es wird wenig in die Tiefe gehen, da ihr mit Angular und Ionic zwei frameworks an die Hand bekommt, die hier einiges
-          eigen machen.
+        - a short dive into the most common environment where js lives: the Browser. We'll see how HTML, CSS and JavaScript are working
+          together to help us.
+        - We don't get too deep into that. Just enough to get u started.
       </div>
     </div>
 
-    <div class="step"  id="tag3" data-x="2000" data-y="0">
-      <h3>2.2 Tag - Asynchrone Programmierung</h3>
+    <div class="step"  id="day3" data-x="2000" data-y="0">
+      <h3>2.2 Day - Asynchronous Programming</h3>
       <ol>
         <li>Callbacks</li>
         <li>Events</li>
@@ -128,26 +97,11 @@
         <li>Promises</li>
       </ol>
       <div class="mod-note">
-        - Für viele Entwickler stellt das Asynchrone Programmiermodel eine erhebliche Hürde da.
-        - wir schauen uns an warum wir dinge asynchron machen, und wie wir damit umgehen können.
-      </div>
-    </div>
-    <div class="step"  id="vorgehen" data-x="2000" data-y="-2000">
-      <h3>Übung macht den Meister</h3>
-      <ul>
-        <li>Explorativ</li>
-        <li>coden,coden,coden</li>
-        <li>Open Your Devtools</li>
-        <li>kleine Aufgaben</li>
-      </ul>
-      <div class="mod-note">
-        - Wir werden versuchen soviel selbst zu erfahren
       </div>
     </div>
 
-
-    <div class="step"  id="literatur" data-x="0" data-y="-2000">
-      <h3>Lesestoff für Details</h3>
+    <div class="step"  id="literature" data-x="0" data-y="-2000">
+      <h3>Some stuff to read</h3>
       <ul>
         <li>eloquentjavascript.net</li>
         <li>Mozilla Developer Network</li>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>JavaScript Basics 1-1</title>
+  <title>JavaScript Basics - 1.2 Basics</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" /> -->
   <link href="jsBasics.css" rel="stylesheet" />
@@ -23,20 +23,20 @@
 
     <div class="step"  id="title" data-x="0">
       <img src="js.jpg" alt="" class="fill">
-      <h3>JavaScript Grundlagen</h3>
+      <h3>JavaScript Basics</h3>
 
       <div class="mod-note">
       </div>
     </div>
 
     <div class="step"  id="1" data-y="2000">
-      <h3>Eigenschaften</h3>
+      <h3>Language Properties</h3>
       <ul>
-        <li>dynamisch typisiert</li>
-        <li>schwach typisiert</li>
-        <li>sehr kleiner Sprachkern</li>
-        <li>multi-paradigmen</li>
-        <li>Funktional, OO, Prozedural</li>
+        <li>dynamicly typed</li>
+        <li>loose typing</li>
+        <li>very small core</li>
+        <li>multi-paradigm</li>
+        <li>functional, OO, procedural</li>
       </ul>
       <div class="mod-note">
         -
@@ -46,17 +46,17 @@
       <h3>Syntax</h3>
       <ul>
         <li>C - Family</li>
-        <li>Java beeinflußt</li>
-        <li>Semicolons optional - ASI</li>
-        <li>Geschweifte Klammern optional</li>
-        <li>nur sehr wenige Typen</li>
+        <li>influenced by Java</li>
+        <li>Semicolons are optional - ASI</li>
+        <li>curly braces are optional</li>
+        <li>only few builtin types</li>
       </ul>
       <div class="mod-note">
       </div>
     </div>
 
     <div class="step"  id="3" data-y="4000" data-x="2000">
-      <h3>Syntax: var, Schleifen, Verzweigung</h3>
+      <h3>Syntax: var, loops, branching</h3>
       <pre><code>
 var linePlural = ' bottles of beer on the wall',
     lineSingular = ' bottle of beer on the wall',
@@ -81,12 +81,12 @@ for (bottles = 99; bottles > 0; bottles--) {
     </div>
 
     <div class="step"  id="4" data-y="2000" data-x="2000">
-      <h3>Literale</h3>
+      <h3>Literals</h3>
       <pre><code>
-var str = 'ein string', zahl = 42,
+var str = 'a string', number = 42,
     bool = true, nullRef = null, undef
     regex = /foo/gim;
-var arr = [1,'2',3], objekt = {eigenschaft: 'wert'};
+var arr = [1,'2',3], object = {prop: 'value'};
 var funcExp = function(){};
 
 function funcStatment(){
@@ -98,14 +98,14 @@ function funcStatment(){
       </div>
     </div>
     <div class="step"  id="5" data-y="0" data-x="2000">
-      <h3>Primitive, Wrapper und Autoboxing</h3>
+      <h3>Primitives, Wrappers and Autoboxing</h3>
       <pre><code>
-var str = 'ein string', zahl = 42,
+var str = 'a string', number = 42,
     bool = true;
-var strObj = new String("noch sin string"),
-    zahlObj = new Number(21),
+var strObj = new String("another string"),
+    numObj = new Number(21),
     bool = new Boolean(false);
-var nan = NaN, unendlich = Infinity;
+var nan = NaN, infinity = Infinity;
       </code></pre>
       <div class="mod-note">
         - neben primitiven datentypen gibt es auch objekt-repräsentationen.
@@ -116,7 +116,7 @@ var nan = NaN, unendlich = Infinity;
       </div>
     </div>
     <div class="step"  id="6" data-y="0" data-x="4000">
-      <h3>typeof und Typen</h3>
+      <h3>typeof and types</h3>
       <pre><code>
 typeof 1;
 typeof 'string';
@@ -139,7 +139,7 @@ typeof new String('string');
     </div>
 
     <div class="step"  id="7" data-y="2000" data-x="4000">
-      <h3>Vergleich & Type Conversion</h3>
+      <h3>comparison & type conversion</h3>
       <pre><code>
 '0' == 0;
 ''  == 0;
@@ -165,9 +165,9 @@ undefined != null
       </div>
     </div>
     <div class="step"  id="8" data-y="4000" data-x="4000">
-      <h3>Die Wahrheit ist fuzzy</h3>
+      <h3>the truth is fuzzy</h3>
       <pre><code>
-var values = [true, 1, 42, -4, "nichtleer", '0', {}, [],
+var values = [true, 1, 42, -4, "nonempty", '0', {}, [],
               false, 0, NaN, null, undefined, ""];
 var logStr = "At index %d, value %s is %s";
 
@@ -227,7 +227,7 @@ NaN == NaN // !!
       </div>
     </div>
     <div class="step"  id="10" data-y="2000" data-x="6000">
-      <h3>Nomenklatur</h3>
+      <h3>Naming conventions</h3>
       <pre><code>
 var allCamelCase = 42;
 var IM_A_CONSTANT_WANNABE = "dont change me";
@@ -246,9 +246,8 @@ var TheConstructor = function AlsoAsFunctionName(){};
       </div>
     </div>
     <div class="step"  id="11" data-y="0" data-x="6000">
-      <h3>Kurz zurückblicken</h3>
-      was vergessen?
-      alles unklar?
+      <h3>Recap</h3>
+      questions?
       <div class="mod-note">
         pause
       </div>
@@ -256,18 +255,18 @@ var TheConstructor = function AlsoAsFunctionName(){};
     <div class="step"  id="12" data-y="0" data-x="8000">
       <h3>Functions</h3>
       <ul>
-        <li>Funktionen sind first-class citizen</li>
-        <li>Funktionen sind spezielle objekte</li>
-        <li>Funktionen erzeugen scope</li>
-        <li>Funktionen geben immer etwas zurück</li>
-        <li>Funktionen können unterschiedliche bindings haben</li>
+        <li>Functions are first-class citizen</li>
+        <li>Functions are special objects</li>
+        <li>Functions create scope</li>
+        <li>Functions return something</li>
+        <li>Functions have dynamic bindings</li>
       </ul>
       <div class="mod-note">
 
       </div>
     </div>
     <div class="step"  id="13" data-y="2000" data-x="8000">
-      <h3>Anatomie einer Funktion</h3>
+      <h3>Anatomy of a function</h3>
       <pre><code>
 function name(explicit, params){
   var thisIsLocal = "";
@@ -280,7 +279,7 @@ function name(explicit, params){
       </div>
     </div>
     <div class="step"  id="14" data-y="4000" data-x="8000">
-      <h3>Konstruktorfunktion</h3>
+      <h3>Constructors</h3>
       <pre><code>
 function Person(name, age){
   this.name = name;
@@ -291,7 +290,7 @@ function Person(name, age){
       </div>
     </div>
     <div class="step"  id="15" data-y="4000" data-x="10000">
-      <h3>Aufrufarten und <code>this</code></h3>
+      <h3>ways to call and this <code>this</code></h3>
       <pre><code>
 someFunc(param1, param2);
 obj.someMethod(param1, param2);
@@ -310,7 +309,7 @@ someFunc.call(someThis, param1, param2);
       </div>
     </div>
     <div class="step"  id="16" data-y="2000" data-x="10000">
-      <h3>Aufrufarten und <code>this</code></h3>
+      <h3>ways to call and this <code>this</code></h3>
       <pre><code>
 function test(){
   console.log(typeof this);
